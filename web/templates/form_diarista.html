@@ -1,11 +1,13 @@
 {% extends "base.html" %} 
 
+{% load crispy_forms_tags %}
+
 {% block conteudo %}
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %} 
     
-    {{form_diarista.as_p}}
+    {{form_diarista|crispy}}
 
-    <button type="submit">Cadastar</button>
+    <button type="submit" class="btn btn-primary" style="margin-top:10px;">Cadastar</button>
   </form>
 {% endblock conteudo %}
