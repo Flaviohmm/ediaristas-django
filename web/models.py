@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Diaristas(models.Model):
+class Diarista(models.Model):
   nome_completo = models.CharField(max_length=100, null=False, blank=False)
   cpf = models.CharField(max_length=12, null=False, blank=False, unique=True)
   email = models.EmailField(null=False, blank=False, unique=True)
