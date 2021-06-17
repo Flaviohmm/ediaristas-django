@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'easy_mask',
-    'web'
+    'web',
+    'api'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
